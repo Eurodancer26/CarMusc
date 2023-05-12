@@ -1,0 +1,159 @@
+.header {
+    min-height: 100vh;
+    position: relative;
+    background: url('./img/header-bg/Rectangle_64.png') no-repeat 100% / cover;
+    padding-top: 40px;
+    &__menu {
+        width: 521px;
+        margin-bottom: 168px;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        position: relative;
+        a {
+            font-family: 'Reforma Grotesk Medium', sans-serif;
+            color: #FFFFFF;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 120%;
+            text-decoration: none;
+            letter-spacing: 0.03em;
+        }
+    }
+    &__title {
+        font-family: 'Reforma Grotesk Bold', sans-serif;
+        font-size: 150px;
+        line-height: 125%;
+        color: $main-color;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+    }
+    &__descr {
+        padding-top: 41px;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        width: 437px;
+    }
+    .label {
+        text-transform: uppercase;
+        z-index: 1;
+        position: relative;
+        padding: 55px 0 0 21px;
+        text-align: center;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 140%;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+        &::before {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            width: 110px;
+            height: 61px;
+            background-color: $main-color;
+            top: 40px;
+            left: 40%;
+            transform: translateX(50%);
+            letter-spacing: 0.05rem;
+        }
+    }
+    &__wrapper {
+        margin-top: 103px;
+        display: grid;
+        justify-content: center;
+        grid-template: 214px / repeat(3, 634px);
+        grid-auto-rows: 640px;
+    }
+    &__adress {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #898989;
+        &-title {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 140%;
+            text-align: center;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+        &-descr {
+            padding-top: 20px;
+            width: 265px;
+            text-align: center;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 140%;
+            text-align: center;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: $main-color;
+        }
+    }
+    &__phone {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #898989;
+        &-title {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 140%;
+            text-align: center;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+        &-link {
+            padding-top: 20px;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 140%;
+            text-align: center;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: $main-color;
+            text-decoration-line: none;
+            &:hover {
+                text-decoration: none;
+                color: $main-color;
+            }
+        }
+    }
+    &__time {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #898989;
+        &-title {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 140%;
+            text-align: center;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }        
+        &-descr {
+            padding-top: 20px;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 140%;
+            text-align: center;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: $main-color;
+        }
+    }
+
+}

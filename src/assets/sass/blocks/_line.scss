@@ -1,0 +1,28 @@
+.line{
+    &-left {
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        background-color: $main-color;
+        width: calc(0% / 2);
+        height: 2px;
+        transition: all 0.5s;
+        &_show{
+            width: calc(100% / 2);
+            transition: all 0.5s;
+        }
+    }
+    &-right {
+        position: absolute;
+        right: 0;
+        bottom: -4px;
+        background-color: $main-color;
+        width: calc(0% / 2);
+        height: 2px;
+        transition: all 0.5s;
+        &_show{
+            width: calc(100% / 2);
+            transition: all 0.5s;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.text {
+    font-family: 'Reforma Grotesk Medium', sans-serif;
+    width: 526px;
+    font-size: 40px;
+    line-height: 120%;
+    color: #FFFFFF;
+    &_fz24 {
+        font-size: 24px;
+        letter-spacing: 0.03em;
+    }
+    &_fz16 {
+        font-size: 16px;
+        letter-spacing: 0.03em;
+    }
+}

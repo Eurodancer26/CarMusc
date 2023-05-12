@@ -1,0 +1,92 @@
+@import 'libs/bootstrap-reboot.min.scss';
+
+@font-face {
+    font-family: 'Reforma Grotesk Bold';
+    src: url('../fonts/ReformaGroteskBold.eot');
+    src: local('Reforma Grotesk Bold'), local('ReformaGroteskBold'),
+        url('./fonts/ReformaGroteskBold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/ReformaGroteskBold.woff2') format('woff2'),
+        url('./fonts/ReformaGroteskBold.woff') format('woff'),
+        url('./fonts/ReformaGroteskBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Reforma Grotesk Demi';
+    src: url('./fonts/ReformaGroteskDemi.eot');
+    src: local('Reforma Grotesk Demi'), local('ReformaGroteskDemi'),
+        url('./fonts/ReformaGroteskDemi.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/ReformaGroteskDemi.woff2') format('woff2'),
+        url('./fonts/ReformaGroteskDemi.woff') format('woff'),
+        url('./fonts/ReformaGroteskDemi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Reforma Grotesk Medium';
+    src: url('./fonts/ReformaGroteskMedium.eot');
+    src: local('Reforma Grotesk Medium'), local('ReformaGroteskMedium'),
+        url('./fonts/ReformaGroteskMedium.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/ReformaGroteskMedium.woff2') format('woff2'),
+        url('./fonts/ReformaGroteskMedium.woff') format('woff'),
+        url('./fonts/ReformaGroteskMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Reforma Grotesk Light';
+    src: url('./fonts/ReformaGroteskLight.eot');
+    src: local('Reforma Grotesk Light'), local('ReformaGroteskLight'),
+        url('./fonts/ReformaGroteskLight.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/ReformaGroteskLight.woff2') format('woff2'),
+        url('./fonts/ReformaGroteskLight.woff') format('woff'),
+        url('./fonts/ReformaGroteskLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@import 'base/variables.scss';
+@import 'base/mixins.scss';
+
+* {
+    font-family: 'Reforma Grotesk Demi', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    position: relative;
+}
+.container {
+    width: 1296px;
+    margin: 0 auto;
+}
+
+.divider {
+    width: 60px;
+    height: 3px;
+    background-color: $main-color;
+    margin: 25px auto 0 auto;
+}
+
+p {
+    margin: 0;
+}
+@import 'blocks/hamburger.scss';
+@import 'blocks/title.scss';
+@import 'blocks/text.scss';
+@import 'blocks/rhombus.scss';
+@import 'blocks/header/header.scss';
+@import 'blocks/line.scss';
+@import 'blocks/achievements/achievements.scss';
+@import 'blocks/carousel/carousel.scss';
+@import 'blocks/advantages/advantages.scss';
+@import 'blocks/_services/services.scss';
+@import 'blocks/advantages-2.scss';
+@import 'blocks/works.scss';
+@import 'blocks/popup.scss';
+@import 'blocks/footer.scss';
+@import 'blocks/media.scss';
+

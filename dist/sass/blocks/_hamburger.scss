@@ -1,0 +1,99 @@
+.hamburger {
+    position: absolute;
+    z-index: 3;
+    top: 40px;
+    right: 312px;
+    width: 36px;
+    height: 21px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    cursor: pointer;
+    span {
+        display: block;
+        width: 40px;
+        height: 3px;
+        background: $main-color;
+    }
+    span.long {
+        width: 40px;
+        margin-right: 10px;
+    }   
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.6s;
+    &.active {
+        left: 0;
+        visibility: visible;
+        opacity: 1;
+    }
+    &__block {
+        z-index: 4;
+        position: relative;
+        width: 320px;
+        height: 100vh;
+        background-color: $main-color;
+        padding: 140px 0 0 40px;
+        transition: all 0.6s;
+    }
+    &__close {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+    }
+    &__list {
+        list-style-type: none;
+        margin-left: 35px;
+    }
+    &__link {
+        position: relative;
+        font-weight: 700;
+        font-size: 24px;
+        margin-bottom: 15px;
+        display: flex;
+        a {
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+        svg {
+            vertical-align: inherit;
+            transform: translateX(-35%);
+            color: #fff;
+            height: 20px;
+            width: 20px;
+        }
+    }
+    &__social {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 50px;
+        width: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__overlay {
+        position: fixed;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        background-color: rgba(107, 78, 78, 0.87);
+        visibility: hidden;
+        &.active {
+            visibility: visible;
+        }
+    }
+}

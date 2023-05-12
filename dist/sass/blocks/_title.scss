@@ -1,0 +1,29 @@
+.title {
+    font-family: 'Reforma Grotesk Demi', sans-serif;
+    color: #FFFFFF;
+    letter-spacing: 0.05em;
+    line-height: 140%;
+    &_fz52 {
+        font-size: 52px;
+        text-transform: uppercase;
+        line-height: 140%;
+    }
+    &_fz43 {
+        font-size: 32px;
+        text-transform: uppercase;
+    }
+    &_fz24 {
+        font-size: 24px;
+        line-height: 140%;
+    }
+    &_fz18 {
+        font-size: 18px;
+        line-height: 140%;
+        text-transform: uppercase;
+    }
+    &_fz16 {
+        font-size: 16px;
+        line-height: 140%;
+        text-transform: uppercase;
+    }
+} 
